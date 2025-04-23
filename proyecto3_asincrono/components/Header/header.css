@@ -1,0 +1,47 @@
+header{
+    display: flex;
+    width: 100%;
+    gap: 100px;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-self: center;
+    padding: 20px;
+    border-bottom: #bd081c solid 4px;
+}
+
+#Logo {
+    height: 80px;
+}
+
+header > input {
+    width: 900px;
+    height: 50px;
+    border-radius: 5px;
+    padding-left: 10px;
+    box-shadow: 5px 5px 5px #bd081c;
+    background-color: transparent;
+    border-color: #bd081c;
+    border-width: 2px;
+}
+
+header > button {
+    width: auto;
+    scale: 1;
+    background-color: transparent;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: none;
+}
+
+header > input:hover , button:hover {
+    border: #bd081c solid 4px;
+    color: white;
+    transition: 0.1s;
+}
+
+header > button > img {
+    height: 50px;
+    width: 50px;
+}
