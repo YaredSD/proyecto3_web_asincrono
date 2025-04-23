@@ -5,7 +5,7 @@ footer {
     align-items: center;
     background-color: #bd081c;
     padding: 10px;
-    
+    margin-top: 1rem;  
 }
 
 footer > p {
