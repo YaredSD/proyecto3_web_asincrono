@@ -37,7 +37,6 @@ header > button {
 
 header > input:hover , button:hover {
     border: #bd081c solid 4px;
-    color: white;
     transition: 0.1s;
 }
 
