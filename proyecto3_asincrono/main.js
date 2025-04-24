@@ -7,11 +7,11 @@ const WebBuild = () => {
   Header();
   Main();
   Footer();
-  getPhotos("Coding");
+  getPhotos("Coding", 20);
 }
 
-const getPhotos = async (keyword) => {
-  const data = await fetch(`https://api.unsplash.com/search/photos?client_id=${import.meta.env.VITE_CLIENT_ID}&query=${keyword}&per_page=30`);
+const getPhotos = async (keyword, photoNum) => {
+  const data = await fetch(`https://api.unsplash.com/search/photos?client_id=${import.meta.env.VITE_CLIENT_ID}&query=${keyword}&per_page=${photoNum}`);
   const results = await data.json();
   const photos = results.results;
   printPhotos(photos);
@@ -49,5 +49,6 @@ WebBuild();
 
 document.querySelector("#SearchButton").addEventListener("click", () => {
   const value = document.querySelector("#SearchInput").value;
-  getPhotos(value);
+  const photoNum = document.querySelector("#Select").value;
+  getPhotos(value, photoNum);
 });
